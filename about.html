@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Delight - About Us</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f5f1;
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar {
+                background-color: #2f0e07;
+            }
+
+            .navbar-brand,
+            .nav-link {
+                color: #fff !important;
+            }
+
+            .navbar-brand:hover,
+            .nav-link:hover {
+                color: #d7ccc8 !important;
+            }
+
+            .about-section {
+                padding: 40px;
+                margin: 20px auto;
+                /* Margins around the section */
+                background-color: #e3d9d1;
+                color: #3e2723;
+                border-radius: 8px;
+                /* Rounded corners */
+                max-width: 1200px;
+                /* to set a max-width for better centering */
+            }
+
+            .about-section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .about-section p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
+            .team img {
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            table {
+                width: 100%;
+                margin: 40px 0;
+                /* Margins around the table */
+                border-collapse: collapse;
+                background-color: #fef5e7;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #3e2723;
+            }
+
+            th,
+            td {
+                padding: 15px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #4e342e;
+                color: #fff;
+            }
+
+            .footer {
+                background-color: #4e342e;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Coffee Delight</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 5rem;">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <div class="container about-section" style="padding-top: 20px; ">
+            <h2 class="text-center my-4">About Us</h2>
+            <!-- style="font-family: handlee;" -->
+            <p class="text-center">Welcome to Coffee Delight! Founded with a deep passion
+                for coffee and a commitment to
+                quality, we aim to offer more than just a cup of coffee—we offer an experience. Our journey began with
+                the idea of creating a space where people could enjoy the rich, aromatic flavors of expertly crafted
+                coffee while connecting with friends and family.</p>
+            <p class="text-center">At Coffee Delight, we source our beans from sustainable farms around the globe,
+                ensuring that each cup we serve supports ethical practices and brings out the best in coffee. Our
+                dedicated team of roasters and baristas works tirelessly to bring you unique blends that highlight the
+                rich and diverse flavors of our coffee beans. From our signature espresso to our handcrafted lattes,
+                every beverage is made with care and attention to detail.</p>
+            <p class="text-center mb-5">Come visit us and experience the warmth and richness of Coffee Delight. Whether
+                you're
+                here for a quick coffee or a relaxing afternoon, we’re here to make your visit memorable.</p>
+
+            <div class="row team mt-4" style="margin-bottom: 40px;">
+                <div class="col-md-4 text-center">
+                    <img src="images/cheif1.jpg" alt="Jane Doe">
+                    <h5>Jane Doe</h5>
+                    <p>Chief Roaster</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/chief2.jpg" alt="John Smith">
+                    <h5>John Smith</h5>
+                    <p>Barista</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/chief3.jpg" alt="Emily Johnson">
+                    <h5>Emily Johnson</h5>
+                    <p>Customer Service</p>
+                </div>
+            </div>
+
+            <!-- Sample Table -->
+            <h3 class="text-center my-4">Our Coffee Menu</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coffee Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Rich and bold, a true coffee classic.</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Espresso topped with creamy steamed milk and foam.</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Espresso with steamed milk and a light layer of foam.</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>Smooth and refreshing, brewed cold for a rich flavor.</td>
+                        <td>$4.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Coffee Delight. All rights reserved.</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

@@ -7,13 +7,28 @@
         <title>Coffee Delight - Home</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- font-family: Handlee -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 
         <style>
+            body {
+                /*background-color: #ffedd8;*/
+            }
+
             .navbar {
-                padding-right: 2rem;
+                background-color: #2f0e07;
+            }
+
+            .navbar-brand,
+            .nav-link {
+                color: #fff !important;
+            }
+
+            .navbar-brand:hover,
+            .nav-link:hover {
+                color: #d7ccc8 !important;
             }
 
             .hero {
@@ -21,15 +36,15 @@
                 overflow: hidden;
             }
 
-            /*.carousel-item {
+            .carousel-item {
                 position: relative;
-                height: 00px;
-
-            }*/
+                height: 500px;
+                /* to set a fixed height for the carousel (can adjust as needed) */
+            }
 
             .carousel-item img {
                 width: 100%;
-                height: 50%;
+                height: 100%;
                 object-fit: cover;
                 object-position: center;
             }
@@ -39,11 +54,13 @@
                 position: absolute;
                 top: 50%;
                 left: 50px;
-                transform: translateY(-35%);
+                /* margin left adjustment */
+                transform: translateY(-40%);
                 color: white;
                 text-align: left;
                 padding: 20px;
                 max-width: 50%;
+                /* to adjust the width to fit the caption text */
             }
 
             .carousel-caption h3 {
@@ -54,6 +71,7 @@
                 font-size: 1.5rem;
             }
 
+            /* to make sure captions don't overlap too much on smaller screens */
             @media (max-width: 768px) {
                 .carousel-caption {
                     max-width: 80%;
@@ -63,6 +81,15 @@
             .achievements,
             .testimonials {
                 padding: 60px 0;
+            }
+
+            .card img {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .card-body {
+                text-align: center;
             }
 
             .testimonial {
@@ -98,11 +125,13 @@
 
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2f0e07;">
-            <a class="navbar-brand" href="index.html" style="font-family: cursive; font-size: 1.4rem;">Coffee
-                Delight</a>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Coffee Delight</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 5rem;">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -111,6 +140,7 @@
                 </ul>
             </div>
         </nav>
+
         <!-- Hero Section with Carousel -->
         <div id="heroCarousel" class="carousel slide hero" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -121,11 +151,9 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/img4.jpg" class="d-block w-100" alt="Espresso Delight">
-                    <div class="carousel-caption display-4 ">
+                    <div class="carousel-caption">
                         <h3>Welcome to Coffee Delight</h3>
                         <p>Experience the finest coffee in town</p>
-                        <!--<h3>Espresso Delight</h3>
-                        <p>Experience the bold flavors of our signature espresso.</p>-->
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -152,6 +180,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
         <!-- Specialties Section -->
         <div class="container">
             <h2 class="text-center my-4">Our Specialties</h2>
@@ -219,6 +248,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Testimonials Section -->
         <div class="container testimonials" style="padding-top: 0px;">
             <h2 class="text-center my-4">What Our Customers Say</h2>
@@ -232,7 +262,7 @@
                         is perfect for a relaxed coffee break."</p>
                 </div>
             </div>
-            <div class="testimonial pt-0" style="padding-top: 0px;">
+            <div class="testimonial">
                 <div class="testimonial-img-wrapper">
                     <img src="images/testmonial2.jpg" class="testimonial-img" alt="Mark Johnson">
                 </div>
@@ -263,7 +293,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     </body>
 
 </html>
