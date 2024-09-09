@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Delight - Events</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f8f5f1;
+                /* Light coffee color for the entire page background */
+                margin: 0;
+                padding: 0;
+            }
+
+            .navbar {
+                background-color: #2f0e07;
+            }
+
+            .navbar-brand,
+            .nav-link {
+                color: #fff !important;
+            }
+
+            .navbar-brand:hover,
+            .nav-link:hover {
+                color: #d7ccc8 !important;
+            }
+
+            .events-section {
+                padding: 40px;
+                margin: 20px auto;
+                background-color: #e3d9d1;
+                /* Light coffee color for the section background */
+                color: #3e2723;
+                /* Dark coffee color for text */
+                border-radius: 8px;
+                /* Rounded corners for a smoother look */
+                max-width: 1200px;
+                /* Set a max-width for better centering */
+            }
+
+            .events-section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .events-section p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
+            .event-item {
+                margin-bottom: 30px;
+            }
+
+            .event-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .gif-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #d7ccc8;
+                /* Light coffee color for dropdown menu */
+                min-width: 160px;
+                border-radius: 8px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                padding: 10px;
+            }
+
+            .dropdown-content a {
+                color: #3e2723;
+                /* Dark coffee color for dropdown items */
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #e3d9d1;
+                /* Slightly different light coffee color for hover */
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropdown-toggle {
+                background-color: #d7ccc8;
+                /* Light coffee color for dropdown button hover */
+            }
+
+            .footer {
+                background-color: #4e342e;
+                /* Dark coffee color */
+                color: white;
+                padding: 20px;
+                text-align: center;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Coffee Delight</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 5rem;">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Events Section -->
+        <div class="container events-section">
+            <h2 class="text-center my-4">Upcoming Events</h2>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown text-center mb-4">
+                <button class="btn dropdown-toggle" type="button" style="background-color:#2f0e07; color: white;">
+                    Select Event Type
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Workshops</a>
+                    <a href="#">Tastings</a>
+                    <a href="#">Live Music</a>
+                    <a href="#">Special Offers</a>
+                </div>
+            </div>
+
+            <!-- Event Item 1 -->
+            <div class="event-item">
+                <h3>Barista Workshop</h3>
+                <p>Join us for a hands-on barista workshop where you'll learn the art of making the perfect espresso and
+                    latte. Our experienced baristas will guide you through the process and share tips for creating
+                    café-quality drinks at home.</p>
+                <img src="images/workshop4.jpg" style="width: 500px; height: 300px;" alt="Barista Workshop"
+                    class="event-image">
+            </div>
+
+            <!-- Event Item 2 -->
+            <div class="event-item">
+                <h3>Coffee Tasting Event</h3>
+                <p>Experience a variety of coffee flavors and learn about different brewing techniques at our coffee
+                    tasting event. This is a great opportunity to discover new favorites and deepen your appreciation
+                    for coffee.</p>
+                <img src="images/tasting1.webp" style="width: 500px; height: 300px;" alt="Coffee Tasting"
+                    class="event-image">
+            </div>
+
+            <!-- Event Item 3 -->
+            <div class="event-item">
+                <h3>Live Music Night</h3>
+                <p>Enjoy an evening of live music while sipping on your favorite coffee. Our live music nights feature
+                    local artists and create a relaxing atmosphere for you to unwind and socialize.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fEvM-OUbaKs?si=_kl8G5-j0PWgQNgn"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Event GIF -->
+            <div class="text-center my-4">
+                <h3>Event Highlights</h3>
+                <img src="images/event2.gif" style="width: 500px; height: 300px;" alt="Event Highlights"
+                    class="gif-image">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Coffee Delight. All rights reserved.</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
