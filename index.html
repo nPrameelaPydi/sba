@@ -23,17 +23,15 @@
 
             /*.carousel-item {
                 position: relative;
-                height: 70rem;
-                /* Adjust the height as needed (50% of viewport height in this example) */
+                height: 00px;
 
+            }*/
 
-            */ .carousel-item img {
+            .carousel-item img {
                 width: 100%;
                 height: 50%;
                 object-fit: cover;
-                /* Ensures the image covers the area without distortion */
                 object-position: center;
-                /* Centers the image within its container */
             }
 
             .carousel-caption {
@@ -41,35 +39,59 @@
                 position: absolute;
                 top: 50%;
                 left: 50px;
-                transform: translateY(-55%);
+                transform: translateY(-35%);
                 color: white;
                 text-align: left;
                 padding: 20px;
                 max-width: 50%;
-                /* Adjust the width to fit the caption text */
             }
 
             .carousel-caption h3 {
                 font-size: 2.5rem;
-                /* Adjust font size as needed */
             }
 
             .carousel-caption p {
                 font-size: 1.5rem;
-                /* Adjust font size as needed */
             }
 
-            /* Make sure captions don't overlap too much on smaller screens */
             @media (max-width: 768px) {
                 .carousel-caption {
                     max-width: 80%;
                 }
             }
 
-
             .achievements,
             .testimonials {
                 padding: 60px 0;
+            }
+
+            .testimonial {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 30px;
+                background-color: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+
+            .testimonial-img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+
+            .testimonial-text {
+                flex: 1;
+            }
+
+            .footer {
+                background-color: #2f0e07;
+                color: white;
+                padding: 20px;
+                text-align: center;
             }
         </style>
     </head>
@@ -89,8 +111,6 @@
                 </ul>
             </div>
         </nav>
-
-
         <!-- Hero Section with Carousel -->
         <div id="heroCarousel" class="carousel slide hero" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -132,6 +152,39 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <!-- Specialties Section -->
+        <div class="container">
+            <h2 class="text-center my-4">Our Specialties</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/img7.jpg" class="card-img-top" alt="Espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text">Bold and rich espresso brewed to perfection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/coffee2.jpg" class="card-img-top" alt="Cappuccino">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">A delightful mix of espresso, steamed milk, and froth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/Cold-Bew-Coffee2.jpg" class="card-img-top" alt="Cold Brew">
+                        <div class="card-body">
+                            <h5 class="card-title">Cold Brew</h5>
+                            <p class="card-text">Smooth and refreshing, perfect for a warm day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Achievements Section -->
         <div class="container achievements">
@@ -139,8 +192,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x200?text=5-Star+Rating" class="card-img-top"
-                            alt="5-Star Rating">
+                        <img src="images/5-star.jpg" class="card-img-top" alt="5-Star Rating">
                         <div class="card-body">
                             <h5 class="card-title">5-Star Rating</h5>
                             <p class="card-text">Rated 5 stars by Coffee Enthusiasts for three consecutive years.</p>
@@ -149,8 +201,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x200?text=Best+Coffee+Shop" class="card-img-top"
-                            alt="Best Coffee Shop">
+                        <img src="images/best4.avif" class="card-img-top" alt="Best Coffee Shop">
                         <div class="card-body">
                             <h5 class="card-title">Best Coffee Shop</h5>
                             <p class="card-text">Awarded 'Best Coffee Shop' in Brewtown Magazine 2023.</p>
@@ -159,8 +210,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x200?text=Green+Initiative" class="card-img-top"
-                            alt="Green Initiative">
+                        <img src="images/green1.jpg" class="card-img-top" alt="Green Initiative">
                         <div class="card-body">
                             <h5 class="card-title">Green Initiative</h5>
                             <p class="card-text">Recognized for our commitment to sustainable coffee sourcing.</p>
@@ -169,6 +219,45 @@
                 </div>
             </div>
         </div>
+        <!-- Testimonials Section -->
+        <div class="container testimonials" style="padding-top: 0px;">
+            <h2 class="text-center my-4">What Our Customers Say</h2>
+            <div class="testimonial">
+                <div class="testimonial-img-wrapper">
+                    <img src="images/testmonial4.jpg" class="testimonial-img" alt="Anna Martinez">
+                </div>
+                <div class="testimonial-text">
+                    <h5 class="card-title">Anna Martinez</h5>
+                    <p class="card-text">"The best coffee I've ever had! The espresso is incredible and the atmosphere
+                        is perfect for a relaxed coffee break."</p>
+                </div>
+            </div>
+            <div class="testimonial pt-0" style="padding-top: 0px;">
+                <div class="testimonial-img-wrapper">
+                    <img src="images/testmonial2.jpg" class="testimonial-img" alt="Mark Johnson">
+                </div>
+                <div class="testimonial-text">
+                    <h5 class="card-title">Mark Johnson</h5>
+                    <p class="card-text">"I love their cappuccinos and the staff is always friendly. My go-to spot for
+                        morning coffee!"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img-wrapper">
+                    <img src="images/testmonial3.jpg" class="testimonial-img" alt="Lisa Wong">
+                </div>
+                <div class="testimonial-text">
+                    <h5 class="card-title">Lisa Wong</h5>
+                    <p class="card-text">"Great place with a cozy ambiance. The cold brew is a game-changer for those
+                        hot days!"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Coffee Delight. All rights reserved.</p>
+        </footer>
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
