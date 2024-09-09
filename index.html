@@ -7,35 +7,80 @@
         <title>Coffee Delight - Home</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 
         <style>
+            .navbar {
+                padding-right: 2rem;
+            }
+
             .hero {
                 position: relative;
                 overflow: hidden;
             }
 
-            .carousel-item img {
+            /*.carousel-item {
+                position: relative;
+                height: 70rem;
+                /* Adjust the height as needed (50% of viewport height in this example) */
+
+
+            */ .carousel-item img {
                 width: 100%;
-                height: auto;
+                height: 50%;
+                object-fit: cover;
+                /* Ensures the image covers the area without distortion */
+                object-position: center;
+                /* Centers the image within its container */
             }
 
             .carousel-caption {
+                font-family: Handlee;
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                left: 50px;
+                transform: translateY(-55%);
                 color: white;
-                text-align: center;
+                text-align: left;
+                padding: 20px;
+                max-width: 50%;
+                /* Adjust the width to fit the caption text */
+            }
+
+            .carousel-caption h3 {
+                font-size: 2.5rem;
+                /* Adjust font size as needed */
+            }
+
+            .carousel-caption p {
+                font-size: 1.5rem;
+                /* Adjust font size as needed */
+            }
+
+            /* Make sure captions don't overlap too much on smaller screens */
+            @media (max-width: 768px) {
+                .carousel-caption {
+                    max-width: 80%;
+                }
+            }
+
+
+            .achievements,
+            .testimonials {
+                padding: 60px 0;
             }
         </style>
     </head>
 
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #583101;">
-            <a class="navbar-brand" href="index.html" style="font-family: cursive;">Coffee Delight</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2f0e07;">
+            <a class="navbar-brand" href="index.html" style="font-family: cursive; font-size: 1.4rem;">Coffee
+                Delight</a>
 
-            <div class="nav-bar" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -44,6 +89,7 @@
                 </ul>
             </div>
         </nav>
+
 
         <!-- Hero Section with Carousel -->
         <div id="heroCarousel" class="carousel slide hero" data-ride="carousel">
@@ -54,24 +100,23 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/1200x500?text=Espresso+Delight" class="d-block w-100"
-                        alt="Espresso Delight">
-                    <div class="carousel-caption">
-                        <h3>Espresso Delight</h3>
-                        <p>Experience the bold flavors of our signature espresso.</p>
+                    <img src="images/img4.jpg" class="d-block w-100" alt="Espresso Delight">
+                    <div class="carousel-caption display-4 ">
+                        <h3>Welcome to Coffee Delight</h3>
+                        <p>Experience the finest coffee in town</p>
+                        <!--<h3>Espresso Delight</h3>
+                        <p>Experience the bold flavors of our signature espresso.</p>-->
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x500?text=Cappuccino+Magic" class="d-block w-100"
-                        alt="Cappuccino Magic">
+                    <img src="images/img6.jpg" class="d-block w-100" alt="Cappuccino Magic">
                     <div class="carousel-caption">
                         <h3>Cappuccino Magic</h3>
                         <p>Indulge in the creamy richness of our cappuccino.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x500?text=Cold+Brew+Refresh" class="d-block w-100"
-                        alt="Cold Brew Refresh">
+                    <img src="images/Cold-Brew-Coffee.webp" class="d-block w-100" alt="Cold Brew Refresh">
                     <div class="carousel-caption">
                         <h3>Cold Brew Refresh</h3>
                         <p>Stay cool with our refreshing cold brew coffee.</p>
@@ -86,6 +131,43 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="container achievements">
+            <h2 class="text-center my-4">Our Achievements</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200?text=5-Star+Rating" class="card-img-top"
+                            alt="5-Star Rating">
+                        <div class="card-body">
+                            <h5 class="card-title">5-Star Rating</h5>
+                            <p class="card-text">Rated 5 stars by Coffee Enthusiasts for three consecutive years.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200?text=Best+Coffee+Shop" class="card-img-top"
+                            alt="Best Coffee Shop">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Coffee Shop</h5>
+                            <p class="card-text">Awarded 'Best Coffee Shop' in Brewtown Magazine 2023.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200?text=Green+Initiative" class="card-img-top"
+                            alt="Green Initiative">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Initiative</h5>
+                            <p class="card-text">Recognized for our commitment to sustainable coffee sourcing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Scripts -->
