@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coffee Delight - Contact Us</title>
+        <link rel="icon" type="image/x-icon" href="images/fevicon3.png">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <style>
@@ -82,41 +83,44 @@
                 free to reach out to us using the forms below.</p>
 
             <!-- General Inquiry Form -->
-            <div class="contact-form" style="background-color: rgba(227, 217, 209, 0.9);">
-                <h3 class="text-center">General Inquiry</h3>
+            <div class="contact-form p-1" style="background-color:rgba(233, 226, 220, 0.9);">
+                <h3 class="text-center pt-1">General Inquiry</h3>
                 <form>
                     <div class="form-group">
-                        <label for="inquiryName">Name</label>
+                        <label for="inquiryName" class="pl-1">Name</label>
                         <input type="text" class="form-control" id="inquiryName" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="inquiryEmail">Email address</label>
+                        <label for="inquiryEmail" class="pl-1">Email address</label>
                         <input type="email" class="form-control" id="inquiryEmail" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="inquiryMessage">Message</label>
+                        <label for="inquiryMessage" class="pl-1">Message</label>
                         <textarea class="form-control" id="inquiryMessage" rows="4" placeholder="Your Message"
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    <button type="submit" class="btn btn-primary mb-2 ml-1">Send Inquiry</button>
                 </form>
             </div>
 
             <!-- Feedback Form -->
-            <div class="feedback-form mt-5">
-                <h3 class="text-center">We Value Your Feedback</h3>
+            <div class="feedback-form mt-5" style="background-color:rgba(213, 200, 189, 0.9) ;">
+                <h3 class="text-center pt-1">We Value Your Feedback</h3>
                 <form>
                     <div class="form-group">
-                        <label for="feedbackName">Name</label>
-                        <input type="text" class="form-control" id="feedbackName" placeholder="Your Name" required>
+                        <label for="feedbackName" class="pl-2">Name</label>
+                        <input type="text" class="form-control" id="feedbackName"
+                            style="background-color:rgba(249, 245, 236, 0.9) ;" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="feedbackEmail">Email address</label>
-                        <input type="email" class="form-control" id="feedbackEmail" placeholder="Your Email" required>
+                        <label for="feedbackEmail" class="pl-2">Email address</label>
+                        <input type="email" class="form-control" id="feedbackEmail"
+                            style="background-color:rgba(249, 245, 236, 0.9) ;" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="feedbackType">Feedback Type</label>
-                        <select class="form-control" id="feedbackType" required>
+                        <label for="feedbackType" class="pl-2">Feedback Type</label>
+                        <select class="form-control" id="feedbackType"
+                            style="background-color:rgba(249, 245, 236, 0.9) ;" required>
                             <option value="">Select Feedback Type</option>
                             <option value="compliment">Compliment</option>
                             <option value="complaint">Complaint</option>
@@ -125,11 +129,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="feedbackMessage">Feedback</label>
-                        <textarea class="form-control" id="feedbackMessage" rows="4" placeholder="Your Feedback"
+                        <label for="feedbackMessage" class="pl-2">Feedback</label>
+                        <textarea class="form-control" id="feedbackMessage"
+                            style="background-color:rgba(249, 245, 236, 0.9) ;" rows="4" placeholder="Your Feedback"
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    <button type="submit" class="btn btn-primary mb-2 ml-1">Submit Feedback</button>
                 </form>
             </div>
         </div>
