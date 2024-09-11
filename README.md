@@ -22,6 +22,5 @@ $ Explore upcoming or news about occured events on our Events page
 
 * Bootstrap: For responsive design and UI components
 * Google Fonts: To add stylish fonts to the website
-* Placeholder.com: For placeholder images used in various sections.
 * Giphy: For embedding GIFs to enhance visual appeal.
 * etc...
